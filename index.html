@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portofolio Dewi Wulandari Pranajaya - Mahasiswa Teknik Informatika dengan keahlian di bidang pengelolaan data, administrasi, media sosial, dan pemrograman dasar." />
+  <meta name="keywords" content="Dewi Wulandari Pranajaya, Portofolio, Mahasiswa Informatika, Pengelolaan Data, Media Sosial, Developer, Editor" />
+  <meta name="author" content="Dewi Wulandari Pranajaya" />
+  <title>Dewi Wulandari Pranajaya - Portofolio</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Dewi Wulandari Pranajaya - Portofolio" />
+  <meta property="og:description" content="Mahasiswa Informatika dengan pengalaman di bidang data, administrasi, media sosial, dan pengembangan web." />
+  <meta property="og:image" content="https://example.com/foto-preview.jpg" />
+  <meta property="og:url" content="https://example.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Portofolio Dewi Wulandari Pranajaya" />
+
+  <!-- Twitter Card (Optional) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dewi Wulandari Pranajaya - Portofolio" />
+  <meta name="twitter:description" content="Mahasiswa Informatika dengan keahlian pengelolaan data dan pengembangan web." />
+  <meta name="twitter:image" content="https://example.com/foto-preview.jpg" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Dewi Wulandari Pranajaya</h1>
+      <p>Mahasiswa | Developer | Editor</p>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#projects">Project</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>
+  <section id="tentang" class="container">
+    <h2>Tentang Saya</h2>
+    <img src="FotoAI.png" alt="Dewi Wulandari Pranajaya" class="about-image" />
+    <p>Saya adalah seorang mahasiswa Teknik Informatika yang juga aktif sebagai developer dan editor konten digital. 
+      Memiliki ketertarikan besar dalam pengembangan web front-end, pengelolaan data, serta penyuntingan konten visual 
+      dan tulisan. Terampil menggunakan berbagai tools seperti HTML, CSS, JavaScript, Microsoft Office, dan aplikasi 
+      pengeditan media. Saya terbiasa bekerja secara kolaboratif maupun mandiri, memiliki semangat belajar yang tinggi, 
+      dan mampu menyesuaikan diri dalam lingkungan kerja yang dinamis dan kreatif.</p>
+  </section>
+  
+  <section id="projects" class="container">
+    <h2>Projects Saya</h2>
+    <div class="carousel">
+      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+      <div class="carousel-container">
+        <div class="carousel-item">
+          <img src="img1.png" alt="Project 1" class="carousel-image" />
+          <div class="carousel-caption">Desain Logo</div>
+        </div>
+        <div class="carousel-item">
+          <img src="img2.jpg" alt="Project 2" class="carousel-image" />
+          <div class="carousel-caption">Desain Menu</div>
+        </div>
+        <div class="carousel-item">
+          <img src="img3.jpg" alt="Project 3" class="carousel-image" />
+          <div class="carousel-caption">Desain Pamflet</div>
+        </div>
+        <div class="carousel-item">
+          <img src="img4.png" alt="Project 4" class="carousel-image" />
+          <div class="carousel-caption">Desain Sertifikat</div>
+        </div>
+        <div class="carousel-item">
+          <img src="img5.png" alt="Project 5" class="carousel-image" />
+          <div class="carousel-caption">Desain Banner</div>
+        </div>
+      </div>
+      <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+</section>
+
+  <section id="kontak" class="container">
+    <h2>Kontak</h2>
+      <p>Email: dewpranajaya@gmail.com</p>
+      <p>Instagram: @delandari</p></p>
+  </section>
+  
+
+  <footer>
+    <p>&copy; 2025 Dewi Wulandari Pranajaya. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    let currentIndex = 0;
+  
+    function moveSlide(direction) {
+      const container = document.querySelector(".carousel-container");
+      const items = document.querySelectorAll(".carousel-item");
+  
+      currentIndex += direction;
+  
+      if (currentIndex < 0) currentIndex = items.length - 1;
+      if (currentIndex >= items.length) currentIndex = 0;
+  
+      container.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+  </script>
+</body>
+</html>
