@@ -1,9 +1,9 @@
 html {
-  scroll-behavior: smooth; /* Membuat scroll lebih halus */
+  scroll-behavior: smooth;
 }
 
 body {
-  transition: all 0.5s ease; /* Efek transisi untuk animasi halus saat scroll */
+  transition: all 0.5s ease;
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
@@ -12,29 +12,29 @@ body {
 }
 
 header {
-  background-image: url('gambar1.jpg'); /* Ganti dengan path gambar */
-  background-size: cover;  /* Agar gambar memenuhi seluruh area header */
-  background-position: center;  /* Agar gambar terpusat */
+  background-image: url('gambar1.jpg'); 
+  background-size: cover;
+  background-position: center;
   color: white;
   padding: 180px 0;
   text-align: center;
 }
 .about-container {
   display: flex;
-  align-items: center;  /* Menjaga teks dan gambar sejajar secara vertikal */
-  gap: 20px;  /* Memberikan jarak antara gambar dan teks */
+  align-items: center;
+  gap: 20px;
 }
 
 .about-image {
-  width: 150px;  /* Ukuran gambar, sesuaikan dengan kebutuhan */
-  height: 150px;  /* Ukuran gambar agar proporsional */
-  border-radius: 50%;  /* Membuat gambar berbentuk bulat (opsional) */
-  object-fit: cover;  /* Menjaga agar gambar tidak terdistorsi */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 section p {
-  font-size: 1rem;  /* Ukuran teks */
-  line-height: 1.6;  /* Spasi antar baris teks */
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 .carousel {
@@ -48,11 +48,11 @@ section p {
 .carousel-container {
   display: flex;
   transition: transform 0.5s ease;
-  width: auto; /* Penting agar total panjang disesuaikan semua item */
+  width: auto;
 }
 
 .carousel-item {
-  min-width: 100%; /* Pastikan setiap item menempati seluruh lebar carousel */
+  min-width: 100%;
   box-sizing: border-box;
   position: relative;
 }
@@ -60,7 +60,7 @@ section p {
 .carousel-image {
   width: 100%;
   max-width: 900px;
-  object-fit: cover;  /* Gambar akan menyesuaikan dengan ukuran kontainer */
+  object-fit: cover;
 }
 
 .carousel-caption {
@@ -115,9 +115,9 @@ nav {
   transition: all 0.3s ease-in-out;
   position: sticky;
   top: 0;
-  background: #444;  /* Warna latar belakang */
+  background: #444;
   z-index: 100;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Tambahkan bayangan jika ingin */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 nav ul {
